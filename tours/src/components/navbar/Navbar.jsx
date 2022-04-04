@@ -83,7 +83,7 @@ const Navbar = () => {
                     variant="button"
                     color="text"
                     textTransform="capitalize"
-                    fontWeight="regular"
+                    fontWeight="bold"
                     py={0.625}
                     px={2}
                   >
@@ -94,22 +94,22 @@ const Navbar = () => {
                   <CustomTypography
                     variant="button"
                     color="black"
-                    fontWeight="regular"
+                    fontWeight="bold"
                     textAlign="center"
                     p={1}
                   >
-                    Log-In
+                    SignIn
                   </CustomTypography>
                 </Link>
                 <Link href="/register" underline="none">
                   <CustomTypography
                     variant="button"
                     color="black"
-                    fontWeight="regular"
+                    fontWeight="bold"
                     textAlign="center"
                     p={1}
                   >
-                    Register
+                    SignUp
                   </CustomTypography>
                 </Link>
               </MenuItem>
@@ -150,7 +150,7 @@ const Navbar = () => {
                     <CustomTypography
                       variant="button"
                       color="white"
-                      fontWeight="regular"
+                      fontWeight="bold"
                       p={1}
                     >
                       Home
@@ -160,13 +160,12 @@ const Navbar = () => {
                 <Box component="li">
                   <Link href="/login" underline="none">
                     <CustomTypography
-                      // href="/login"
                       variant="button"
                       color="white"
-                      fontWeight="regular"
+                      fontWeight="bold"
                       p={1}
                     >
-                      Log-In
+                      Sign-In
                     </CustomTypography>
                   </Link>
                 </Box>
@@ -175,10 +174,10 @@ const Navbar = () => {
                     <CustomTypography
                       variant="button"
                       color="white"
-                      fontWeight="regular"
+                      fontWeight="bold"
                       p={1}
                     >
-                      Register
+                      Sign-Up
                     </CustomTypography>
                   </Link>
                 </Box>

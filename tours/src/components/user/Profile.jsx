@@ -33,23 +33,23 @@ const Profile = () => {
         minHeight="30rem"
         width="100%"
         sx={{
-          backgroundImage: `url(${HeaderImg4}),linear-gradient(45deg, #bdc3c7  30%, #2c3e50 90%)`,
+          backgroundImage: ({
+            functions: { linearGradient, rgba },
+            palette: { gradients },
+          }) =>
+            `${linearGradient(
+              rgba(gradients.dark.main, 0.8),
+              rgba(gradients.dark.state, 0.8)
+            )}, url(${HeaderImg4})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
-          variant: "contained",
-          bgColor: "transparent",
-          color: "dark",
-          opacity: 1,
-          borderRadius: "none",
-          shadow: "none",
-          coloredShadow: "none",
         }}
       />
       <Card
         sx={{
-          p: 8,
+          p: 9,
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
@@ -100,7 +100,7 @@ const Profile = () => {
                         iconOnly: false,
                       }}
                     >
-                      Update Profile
+                      Update
                     </Button>
                   </Box>
 

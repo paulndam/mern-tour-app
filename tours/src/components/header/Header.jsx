@@ -5,6 +5,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import HeaderImg4 from "../../Images/Header-Img4.jpeg";
+import HeaderImg1 from "../../Images/Header-Img-1.png";
+
 import { fontSize } from "@mui/system";
 import Stack from "@mui/material/Stack";
 import { CustomTypography } from "../../allcomponents/AllComponents";
@@ -21,7 +23,14 @@ const Header = () => {
         alignItems="center"
         minHeight="100vh"
         sx={{
-          backgroundImage: `url(${HeaderImg4}),linear-gradient(45deg, #bdc3c7  30%, #2c3e50 90%)`,
+          backgroundImage: ({
+            palette: { gradients },
+            functions: { linearGradient, rgba },
+          }) =>
+            `${linearGradient(
+              rgba(gradients.dark.main, 0.5),
+              rgba(gradients.dark.state, 0.5)
+            )}, url(${HeaderImg1})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
