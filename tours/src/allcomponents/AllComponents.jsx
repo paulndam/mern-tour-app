@@ -1,0 +1,15 @@
+export { default as Navbar } from "../components/navbar/Navbar";
+export { default as Header } from "../components/header/Header";
+export { default as Home } from "../components/homepage/Home";
+export { default as Register } from "../components/register/Register";
+export { default as Login } from "../components/login/Login";
+export { default as Features } from "../components/features/Features";
+export { default as Content } from "../components/contents/Contents";
+export { default as Banner } from "../components/banner/Banner";
+export { default as Footer } from "../components/footer/Footer";
+export { default as Maincontent } from "../components/maincontent/Maincontent";
+export { default as TourCard } from "../components/tourcard/TourCard";
+export { default as SocialMediaBanner } from "../components/socialmediabanner/SocialMediaBanner";
+export { default as Profile } from "../components/user/Profile";
+export { default as CustomTypography } from "../components/custom/CustomTypography.js";
+export { default as CustomTourCards } from "../components/custom/CustomTourCards";
