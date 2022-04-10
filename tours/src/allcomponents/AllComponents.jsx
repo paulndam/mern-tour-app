@@ -13,3 +13,5 @@ export { default as SocialMediaBanner } from "../components/socialmediabanner/So
 export { default as Profile } from "../components/user/Profile";
 export { default as CustomTypography } from "../components/custom/CustomTypography.js";
 export { default as CustomTourCards } from "../components/custom/CustomTourCards";
+export { default as EditProfile } from "../components/user/EditProfile";
+export { default as Tour } from "../components/tour/Tour";

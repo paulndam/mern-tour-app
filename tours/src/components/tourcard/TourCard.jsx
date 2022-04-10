@@ -56,7 +56,18 @@ const CoverImgStyle = styled("img")({
 // ----------------------------------------------------------------------
 
 const TourCard = ({ post, index }) => {
-  const { cover, title, view, comment, share, author, createdAt } = post;
+  const {
+    cover,
+    title,
+    view,
+    comment,
+    share,
+    author,
+    createdAt,
+    name,
+    price,
+    imageCover,
+  } = post;
   const latestPostLarge = index === 0;
   const latestPost = index === 1 || index === 2;
 
@@ -108,8 +119,8 @@ const TourCard = ({ post, index }) => {
             }}
           />
           <AvatarStyle
-            alt={author.name}
-            src={author.avatarUrl}
+            alt={name}
+            src={imageCover}
             sx={{
               ...((latestPostLarge || latestPost) && {
                 zIndex: 9,
@@ -139,7 +150,7 @@ const TourCard = ({ post, index }) => {
             variant="caption"
             sx={{ color: "text.disabled", display: "block" }}
           >
-            {fDate(createdAt)}
+            {/*{fDate(createdAt)} */}
           </Typography>
 
           <TitleStyle
@@ -155,7 +166,7 @@ const TourCard = ({ post, index }) => {
               }),
             }}
           >
-            {title}
+            {name}
           </TitleStyle>
 
           <InfoStyle>
@@ -176,7 +187,8 @@ const TourCard = ({ post, index }) => {
                   sx={{ width: 16, height: 16, mr: 0.5 }}
                 />
                 <Typography variant="caption">
-                  {fShortenNumber(info.number)}
+                  {/*{fShortenNumber(info.number)}
+                   */}
                 </Typography>
               </Box>
             ))}

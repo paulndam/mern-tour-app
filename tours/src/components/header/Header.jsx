@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import HeaderImg4 from "../../Images/Header-Img4.jpeg";
 import HeaderImg1 from "../../Images/Header-Img-1.png";
-
 import { fontSize } from "@mui/system";
 import Stack from "@mui/material/Stack";
 import { CustomTypography } from "../../allcomponents/AllComponents";

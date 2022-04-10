@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import HeaderImg4 from "../../Images/Header-Img2.png";
 import Card from "@mui/material/Card";
@@ -30,7 +31,7 @@ const Profile = () => {
       }}
     >
       <Box
-        minHeight="30rem"
+        minHeight="40rem"
         width="100%"
         sx={{
           backgroundImage: ({
@@ -89,19 +90,21 @@ const Profile = () => {
                     <CustomTypography variant="h3">
                       Michael Eli
                     </CustomTypography>
-                    <Button
-                      variant="outlined"
-                      color="info"
-                      size="small"
-                      sx={{
-                        borderRadius: "5px",
-                        color: "info",
-                        circular: false,
-                        iconOnly: false,
-                      }}
-                    >
-                      Update
-                    </Button>
+                    <Link href="/user/profile/update" underline="none">
+                      <Button
+                        variant="outlined"
+                        color="info"
+                        size="small"
+                        sx={{
+                          borderRadius: "5px",
+                          color: "info",
+                          circular: false,
+                          iconOnly: false,
+                        }}
+                      >
+                        Update
+                      </Button>
+                    </Link>
                   </Box>
 
                   <Grid container spacing={3} mb={3}>
@@ -180,43 +183,49 @@ const Profile = () => {
             </Grid>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} lg={3}>
-                <CustomTourCards
-                  image={T1}
-                  title="Rover raised $65 million"
-                  description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
-                  action={{
-                    type: "internal",
-                    route: "/pages/blogs/author",
-                    color: "info",
-                    label: "read more",
-                  }}
-                />
+                <Link href="/tour/id" underline="none">
+                  <CustomTourCards
+                    image={T1}
+                    title="Rover raised $65 million"
+                    description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
+                    action={{
+                      type: "internal",
+                      route: "/tour/id",
+                      color: "info",
+                      label: "read more",
+                    }}
+                  />
+                </Link>
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
-                <CustomTourCards
-                  image={T2}
-                  title="Rover raised $65 million"
-                  description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
-                  action={{
-                    type: "internal",
-                    route: "/pages/blogs/author",
-                    color: "info",
-                    label: "read more",
-                  }}
-                />
+                <Link href="/tour/id" underline="none">
+                  <CustomTourCards
+                    image={T2}
+                    title="Rover raised $65 million"
+                    description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
+                    action={{
+                      type: "internal",
+                      route: "/tour/id",
+                      color: "info",
+                      label: "read more",
+                    }}
+                  />
+                </Link>
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
-                <CustomTourCards
-                  image={T3}
-                  title="Rover raised $65 million"
-                  description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
-                  action={{
-                    type: "internal",
-                    route: "/pages/blogs/author",
-                    color: "info",
-                    label: "read more",
-                  }}
-                />
+                <Link href="/tour/id" underline="none">
+                  <CustomTourCards
+                    image={T3}
+                    title="Rover raised $65 million"
+                    description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
+                    action={{
+                      type: "internal",
+                      route: "/tour/id",
+                      color: "info",
+                      label: "read more",
+                    }}
+                  />
+                </Link>
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
                 <CustomTourCards
@@ -225,7 +234,7 @@ const Profile = () => {
                   description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
                   action={{
                     type: "internal",
-                    route: "/pages/blogs/author",
+                    route: "/tour/id",
                     color: "info",
                     label: "read more",
                   }}

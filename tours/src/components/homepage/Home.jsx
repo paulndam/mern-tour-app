@@ -7,6 +7,7 @@ import {
   Footer,
   Maincontent,
   SocialMediaBanner,
+  TourCard,
 } from "../../allcomponents/AllComponents";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <Content />
       <Banner />
       <Maincontent />
+
       <SocialMediaBanner />
       <Footer />
     </div>

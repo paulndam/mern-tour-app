@@ -7,6 +7,8 @@ import {
   Register,
   Login,
   Profile,
+  EditProfile,
+  Tour,
 } from "./allcomponents/AllComponents.jsx";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -24,6 +26,8 @@ function App() {
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/profile" component={Profile} />
+          <Route exact path="/user/profile/update" component={EditProfile} />
+          <Route exact path="/tour/id" component={Tour} />
         </Switch>
       </BrowserRouter>
     </ThemeProvider>
